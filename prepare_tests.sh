@@ -1,11 +1,11 @@
 #! /usr/bin/env bash
 
-mkdir -p tests/LibriSpeech
+mkdir -p tests
 
 # download data, generate manifests
 PYTHONPATH=.:$PYTHONPATH python librispeech.py \
 --manifest_prefix='tests/LibriSpeech/manifest' \
---target_dir='tests/LibriSpeech' \
+--target_dir='' \
 --full_download='False'
 
 if [ $? -ne 0 ]; then

@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-cd /home/ironbas3/PaddleSpeech > /dev/null
+cd /home/$USER/PaddleSpeech > /dev/null
 
 # evaluate model
 python -u test.py \
