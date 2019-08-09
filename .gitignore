@@ -1,6 +1,7 @@
 # Don't track content of these folders
 tests/
-models/
+asr-wer/
+PaddleSpeech/
 
 # Zip and tar files
 *.zip
