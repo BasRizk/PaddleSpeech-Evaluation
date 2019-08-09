@@ -90,7 +90,7 @@ if USING_GPU:
 if TEST_CORPUS:
     platform_id = TEST_CORPUS + "_" + AUDIO_INPUT + "_" + platform_id
     
-platform_meta_path = "logs/v" + MODEL_VERSION + "/" + platform_id
+platform_meta_path = "logs/" + MODEL_VERSION + "/" + platform_id
 
 
     
