@@ -2939,4 +2939,4 @@ tests/LibriSpeech/test-other/8461/281231/8461-281231-0036.wav,6.74,0.642,-1.0,sh
 tests/LibriSpeech/test-other/8461/281231/8461-281231-0037.wav,7.33,0.665,-1.0,at his feet was placed a table occupied by two scribes whose duty it was to record the proceedings of the day,at his feet was placed the table occupied by two scribes whose duty was to record the proceedings of the day
 tests/LibriSpeech/test-other/8461/281231/8461-281231-0038.wav,10.2,0.858,-1.0,the preceptors of whom there were four present occupied seats behind their superiors and behind them stood the esquires of the order robed in white,the preceptors of whom there were full present occupied seats behind the superiors and behind them stood the esquires of the order groped in white
 AvgProcTime (sec/second of audio),0.0942103454383,,,,
-AvgWER,-0.999659863946,,,,,
+AvgWER,-0.999659863946,,,,

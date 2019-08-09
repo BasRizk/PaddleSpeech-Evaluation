@@ -169,7 +169,7 @@ ds2_model = DeepSpeech2Model(
 inf_model_load_end = timer() - inf_model_load_start
 print('Loaded inference model in {:.3}s.'.format(inf_model_load_end))
 log_file.write('Loaded inference model in {:.3}s.'.format(inf_model_load_end))
-summ_file.write('Loaded inference model in,{:.3}s.'.format(inf_model_load_end))
+summ_file.write('Loaded inference model in,{:.3}s \n'.format(inf_model_load_end))
 
 # decoders only accept string encoded in utf-8
 vocab_list = [chars.encode("utf-8") for chars in data_generator.vocab_list]
@@ -184,7 +184,7 @@ if decoding_method == "ctc_beam_search":
     lm_load_end = timer() - lm_load_start
     print('Loaded language model (scorer)) in {:.3}s.'.format(lm_load_end))
     log_file.write('Loaded language model (scorer) in {:.3}s.'.format(lm_load_end))
-    summ_file.write('Loaded language model (scorer) in,{:.3}s.'.format(lm_load_end))
+    summ_file.write('Loaded language model (scorer) in,{:.3}s \n'.format(lm_load_end))
     
     
 errors_func = char_errors if error_rate_type == 'cer' else word_errors
@@ -307,7 +307,7 @@ summ_file.write("Avg. Proc. time/sec," + str(avg_proc_time) + "\n" +\
 log_file.close()
 summ_file.close()
 processed_data+= "AvgProcTime (sec/second of audio)," + str(avg_proc_time) + ",,,," + "\n"
-processed_data+= "AvgWER," + str(avg_wer) + ",,,,,"+ "\n"
+processed_data+= "AvgWER," + str(avg_wer) + ",,,," + "\n"
 
 
 with open(benchmark_filepath, 'w') as f:

@@ -19,7 +19,7 @@ sys.path.insert(1, './PaddleSpeech')
 from data_utils.utility import download, unpack
 
 TARGET_DIR = "tests"
-MANIFEST_PREFIX = "tests"
+MANIFEST_PREFIX = "manifest"
     
 URL_ROOT = "http://www.openslr.org/resources/12"
 URL_TEST_OTHER = URL_ROOT + "/test-other.tar.gz"
@@ -69,7 +69,8 @@ def prepare_dataset(url, md5sum, target_dir, manifest_path):
         print("Skip downloading and unpacking. Data already exists in %s." %
               data_dir)
     # create manifest json file
-    create_manifest(data_dir, manifest_path)
+    if not os.path.exists(manifest_path):
+        create_manifest(data_dir, manifest_path)
 
 
 def main():
@@ -78,6 +79,13 @@ def main():
         md5sum=MD5_TEST_OTHER,
         target_dir=TARGET_DIR,
         manifest_path=MANIFEST_PREFIX + ".test-other")
+    
+    if os.path.exists(os.path.join(TARGET_DIR, "iisys")):
+        create_manifest(
+            data_dir=TARGET_DIR,
+            manifest_path=MANIFEST_PREFIX + ".iisys-en")
+    else:
+        print("iisys data-set dir needs to be places in %s" % TARGET_DIR)
     
 
 
