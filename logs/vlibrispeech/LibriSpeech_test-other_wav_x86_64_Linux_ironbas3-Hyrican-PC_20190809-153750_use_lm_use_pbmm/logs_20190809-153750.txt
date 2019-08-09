@@ -1,0 +1,1 @@
+Loading inference model from files PaddleSpeech/models/librispeech/params.tar.gzLoaded inference model in 2.45s.Loading language model (scorer) from files PaddleSpeech/models/lm/common_crawl_00.prune01111.trie.klmLoaded language model (scorer) in 78.4s.

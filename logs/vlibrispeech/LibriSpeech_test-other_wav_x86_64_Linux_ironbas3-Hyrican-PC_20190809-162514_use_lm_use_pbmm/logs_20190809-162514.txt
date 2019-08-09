@@ -1,0 +1,53 @@
+Loading inference model from files PaddleSpeech/models/librispeech/params.tar.gzLoaded inference model in 2.63s.Loading language model (scorer) from files PaddleSpeech/models/lm/common_crawl_00.prune01111.trie.klmLoaded language model (scorer) in 27.8s.# Audio number 2/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0000.wav):
+# - 15.0 seconds long.
+# - actual    text: 't h e r e ' s   i r o n   t h e y   s a y   i n   a l l   o u r   b l o o d   a n d   a   g r a i n   o r   t w o   p e r h a p s   i s   g o o d   b u t   h i s   h e   m a k e s   m e   h a r s h l y   f e e l   h a s   g o t   a   l i t t l e   t o o   m u c h   o f   s t e e l   a n o n'
+# - processed text: 'the iron they say in all our blood and a grain or two perhaps is good but his he makes me harshly feel has got a little too much of steel anon'
+# - processed in 7.806 seconds.
+# - WER = -1.0
+# Audio number 3/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0001.wav):
+# - 12.625 seconds long.
+# - actual    text: 'm a r g a r e t   s a i d   m i s t e r   h a l e   a s   h e   r e t u r n e d   f r o m   s h o w i n g   h i s   g u e s t   d o w n s t a i r s   i   c o u l d   n o t   h e l p   w a t c h i n g   y o u r   f a c e   w i t h   s o m e   a n x i e t y   w h e n   m i s t e r   t h o r n t o n   m a d e   h i s   c o n f e s s i o n   o f   h a v i n g   b e e n   a   s h o p   b o y'
+# - processed text: 'margaret said mister hale as he returned from showing his guests downstairs i could not help watching your face with some anxiety when mister thornton made his confession of having been a shop boy'
+# - processed in 5.593 seconds.
+# - WER = -1.0
+# Audio number 4/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0002.wav):
+# - 2.835 seconds long.
+# - actual    text: 'y o u   d o n ' t   m e a n   t h a t   y o u   t h o u g h t   m e   s o   s i l l y'
+# - processed text: 'you don't mean that you thought me so silly'
+# - processed in 2.249 seconds.
+# - WER = -1.0
+# Audio number 5/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0003.wav):
+# - 5.06 seconds long.
+# - actual    text: 'i   r e a l l y   l i k e d   t h a t   a c c o u n t   o f   h i m s e l f   b e t t e r   t h a n   a n y t h i n g   e l s e   h e   s a i d'
+# - processed text: 'i really liked that account of himself better than anything else he said'
+# - processed in 1.857 seconds.
+# - WER = -1.0
+# Audio number 6/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0004.wav):
+# - 4.475 seconds long.
+# - actual    text: 'h i s   s t a t e m e n t   o f   h a v i n g   b e e n   a   s h o p   b o y   w a s   t h e   t h i n g   i   l i k e d   b e s t   o f   a l l'
+# - processed text: 'his statement of having been a shop boy was the thing i like best of all'
+# - processed in 1.832 seconds.
+# - WER = -1.0
+# Audio number 7/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0005.wav):
+# - 4.3 seconds long.
+# - actual    text: 'y o u   w h o   w e r e   a l w a y s   a c c u s i n g   p e o p l e   o f   b e i n g   s h o p p y   a t   h e l s t o n e'
+# - processed text: 'you who were always accusing people of being shopped helston'
+# - processed in 1.451 seconds.
+# - WER = -1.0
+# Audio number 8/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0006.wav):
+# - 8.14 seconds long.
+# - actual    text: 'i   d o n ' t   t h i n k   m i s t e r   h a l e   y o u   h a v e   d o n e   q u i t e   r i g h t   i n   i n t r o d u c i n g   s u c h   a   p e r s o n   t o   u s   w i t h o u t   t e l l i n g   u s   w h a t   h e   h a d   b e e n'
+# - processed text: 'i don't think mister hale you have done quite right in introducing such a person to us without telling us what he had been'
+# - processed in 2.964 seconds.
+# - WER = -1.0
+# Audio number 9/2939
+# File (tests/LibriSpeech/test-other/1688/142285/1688-142285-0007.wav):
+# - 7.06 seconds long.
+# - actual    text: 'i   r e a l l y   w a s   v e r y   m u c h   a f r a i d   o f   s h o w i n g   h i m   h o w   m u c 

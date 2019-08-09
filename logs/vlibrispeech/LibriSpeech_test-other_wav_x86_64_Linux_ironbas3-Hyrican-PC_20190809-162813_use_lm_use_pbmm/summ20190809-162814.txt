@@ -1,0 +1,2 @@
+Loaded inference model in,2.66s.Loaded language model (scorer) in,22.0s.Avg. Proc. time/sec,0.0942103454383
+Avg. WER,-0.999659863946
