@@ -38,7 +38,7 @@ model_path= path.join(model_dir,  MODEL_VERSION, 'params.tar.gz' )
 lang_model_path= path.join(model_dir,  "lm", 'common_crawl_00.prune01111.trie.klm')
 
 IS_GLOBAL_DIRECTORIES = True
-USING_GPU = False
+USING_GPU = True
 USING_GRU = False
 USE_LANGUAGE_MODEL = True
 USE_TFLITE = False
