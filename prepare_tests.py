@@ -33,8 +33,12 @@ def create_manifest(data_dir, manifest_path):
     print("Creating manifest %s ..." % manifest_path)
     json_lines = []
     for folder, _, filelist in sorted(os.walk(data_dir)):
+        if "iisys" in manifest_path:
+            postfix = ".tsv"
+        else:
+            postfix = "trans.txt"
         text_filelist = [
-            filename for filename in filelist if filename.endswith('trans.txt')
+            filename for filename in filelist if filename.endswith(postfix)
         ]
         if len(text_filelist) > 0:
             text_filepath = os.path.join(folder, text_filelist[0])
@@ -82,7 +86,7 @@ def main():
     
     if os.path.exists(os.path.join(TARGET_DIR, "iisys")):
         create_manifest(
-            data_dir=TARGET_DIR,
+            data_dir=os.path.join(TARGET_DIR, "iisys"),
             manifest_path=MANIFEST_PREFIX + ".iisys-en")
     else:
         print("iisys data-set dir needs to be places in %s" % TARGET_DIR)

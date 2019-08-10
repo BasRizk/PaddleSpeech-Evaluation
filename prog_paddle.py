@@ -20,10 +20,12 @@ import soundfile as sf
 from timeit import default_timer as timer
 from basic_utils import get_platform_id, document_machine
 from basic_utils import prepare_pathes, get_metafiles_pathes
+import pandas as pd
 
 
-TEST_PATH="tests/LibriSpeech/test-other"
-#TEST_PATH="tests/iisys"
+#TEST_PATH="tests/LibriSpeech/test-other"
+TEST_PATH="tests/iisys"
+
 MODEL_VERSION="librispeech"
 
 model_dir = "PaddleSpeech/models"
@@ -114,11 +116,13 @@ for d in test_directories:
 audio_pathes.sort()
 text_pathes.sort()    
 
+log_file = open(log_filepath, "w")
+summ_file = open(summ_filepath, "w")
+audio_files = pd.read_json(test_manifest, lines=True)
+
 ##############################################################################
 # ----------------------------- Model Loading 
 ##############################################################################
-log_file = open(log_filepath, "w")
-summ_file = open(summ_filepath, "w")
 
 batch_size=1 
 trainer_count=1 
@@ -193,12 +197,11 @@ errors_sum, len_refs, num_ins = 0.0, 0, 0
 ##############################################################################
 # ---Running the PADDLE DS2 STT Engine by running through the audio files
 ##############################################################################
-import pandas as pd
-audio_files = pd.read_json(test_manifest, lines=True)
 processed_data = "filename,length(sec),proc_time(sec),wer,actual_text,processed_text\n"
 avg_wer = 0
 avg_proc_time = 0
 num_of_audiofiles = len([item for sublist in audio_pathes for item in sublist])
+#num_of_audiofiles = len(audio_files)
 current_audio_number = 1
 
 for infer_data, sample_audio_path, imported_text in \
